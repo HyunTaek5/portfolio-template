@@ -1,0 +1,67 @@
+{
+  "name": "@portfolio/blog",
+  "version": "0.1.0",
+  "private": true,
+  "description": "포트폴리오 템플릿",
+  "author": "HyunTaek5",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "run:blog": "npx kill-port 8000 && gatsby develop",
+    "build:blog": "cross-env GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build --log-pages",
+    "serve:blog": "gatsby serve",
+    "clean:blog": "gatsby clean",
+    "post:blog": "node ./scripts/create-post-file.js",
+    "deploy:blog": "node ./scripts/deploy.js"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@justsloth/core": "0.0.1",
+    "@lottiefiles/react-lottie-player": "^3.5.3",
+    "@mdx-js/mdx": "^1.6.22",
+    "@mdx-js/react": "^1.6.22",
+    "cross-env": "^7.0.3",
+    "gatsby": "^5.13.3",
+    "gatsby-plugin-advanced-sitemap": "^2.1.0",
+    "gatsby-plugin-emotion": "^8.13.1",
+    "gatsby-plugin-google-analytics": "^5.13.1",
+    "gatsby-plugin-manifest": "^5.13.1",
+    "gatsby-plugin-mdx": "^5.13.1",
+    "gatsby-plugin-nprogress": "^5.13.1",
+    "gatsby-plugin-page-creator": "^5.13.1",
+    "gatsby-plugin-react-helmet": "^6.13.1",
+    "gatsby-plugin-robots-txt": "^1.8.0",
+    "gatsby-plugin-sharp": "^5.13.1",
+    "gatsby-plugin-sitemap": "^6.13.1",
+    "gatsby-plugin-typescript": "^5.13.1",
+    "gatsby-remark-copy-linked-files": "^6.13.1",
+    "gatsby-remark-gifs": "^1.1.0",
+    "gatsby-remark-images": "^7.13.1",
+    "gatsby-remark-vscode": "^3.3.0",
+    "gatsby-source-filesystem": "^5.13.1",
+    "gatsby-transformer-remark": "^6.13.1",
+    "node-gyp": "^10.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-react-jsx": "^7.16.7",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "@types/jest": "^26.0.15",
+    "@types/mdx-js__react": "^1.5.5",
+    "@types/node": "^12.0.0",
+    "@types/react": "^18.2.52",
+    "@types/react-dom": "^18.2.18",
+    "@types/react-helmet": "^6.1.5",
+    "gh-pages": "^3.2.3"
+  },
+  "volta": {
+    "node": "18.17.0",
+    "yarn": "1.22.17"
+  }
+}
