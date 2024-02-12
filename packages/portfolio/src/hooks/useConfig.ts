@@ -55,14 +55,6 @@ interface ReturningUseConfig {
         }[]
       }[]
     }
-    hobby: {
-      description: string
-      list: {
-        title: string
-        url: string
-        descriptions: string[]
-      }[]
-    }
     mentor: {
       description: string
       list: {

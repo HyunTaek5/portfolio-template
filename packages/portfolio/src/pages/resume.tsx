@@ -200,35 +200,6 @@ const ResumePage: FC = () => {
           </GridContainer>
         </Contents>
       </Box>
-      <Box id='hobby'>
-        <Contents>
-          <Container>
-            <Text size={40} weight={800}>
-              {resume.hobby.description}
-            </Text>
-            <Spacer y={1.5} />
-            {resume.hobby.list.map((it, idx) => (
-              <Container key={idx}>
-                <Text as='h3' size={24} weight={600}>
-                  {it.title}
-                </Text>
-                <div>
-                  {it.descriptions?.map((it_, idx) => (
-                    <ul key={idx}>
-                      <li>
-                        <Container>
-                          <Text size={16}>{it_}</Text>
-                        </Container>
-                      </li>
-                    </ul>
-                  ))}
-                </div>
-                <Spacer y={1} />
-              </Container>
-            ))}
-          </Container>
-        </Contents>
-      </Box>
       <Box id='activities'>
         <Contents>
           <Container>
