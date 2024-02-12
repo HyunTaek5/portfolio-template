@@ -4,7 +4,7 @@ import { NavCategoryType, NavFooterType } from '../src/components/NavBar/type'
 import { useConfig } from '../src/hooks/useConfig'
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
-import profile from '../static/profile.jpg'
+import profile from '../static/profile.png'
 
 const { profile: profileData } = useConfig()
 
