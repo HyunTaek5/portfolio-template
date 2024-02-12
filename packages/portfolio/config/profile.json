@@ -3,11 +3,11 @@
   "title": "포트폴리오 템플릿",
   "titleTemplate": "%s · 홍길동",
   "placeholder": "/profile.jpg",
-  "siteUrl": "",
+  "siteUrl": "https://example.com",
   "description": "메타 데이터 포트폴리오 템플릿 설명",
   "twitterUserName": "",
   "github": "템플릿 깃헙 유저명",
   "linkedin": "링크드인 유저 ID",
   "secondary": "기존 블로그 url",
-  "googleAnalyticsTag": ""
+  "googleAnalyticsTag": "google-tracking-id"
 }

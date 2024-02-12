@@ -1,5 +1,4 @@
 const profile = require('./config/profile.json')
-const core = require('@justsloth/core')
 
 module.exports = {
   trailingSlash: `never`,
@@ -89,7 +88,7 @@ module.exports = {
       resolve: `gatsby-plugin-nprogress`,
       options: {
         // Setting a color is optional.
-        color: core.Colors.CYAN.DEFAULT,
+        color: '#50E3C2',
         // Disable the loading spinner.
         showSpinner: false
       }
