@@ -25,9 +25,8 @@ export const Footer: FC = () => {
             </FooterLink>
           </FooterGroup>
           <FooterGroup title='관련 사이트'>
-            <FooterLink href='https://eight20.tistory.com'>다른 블로그</FooterLink>
-            <FooterLink href='https://team-joon.com/'>Techeer</FooterLink>
-            <FooterLink href='https://medium.com/team-joon'>Techeer 기술블로그</FooterLink>
+            <FooterLink href='http://techeer.net'>Techeer</FooterLink>
+            <FooterLink href='https://github.com/HyunTaek5/portfolio-template'>Github Repository</FooterLink>
           </FooterGroup>
         </FooterWrapper>
       </Styled._FooterBox>
