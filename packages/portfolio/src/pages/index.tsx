@@ -6,12 +6,14 @@ import { FC } from 'react'
 
 import { ListTable } from '../components/ListTable'
 import { Seo } from '../components/Seo'
+import { useConfig } from '../hooks/useConfig'
 import { IndexQuery, PageProps, Post } from '../types/type'
 import { filteredByDraft, getTime } from '../utils'
 
 const IndexPage: FC<PageProps<IndexQuery>> = (props) => {
   const { data } = props
   const { nodes } = data.allMarkdownRemark
+  const { profile } = useConfig()
 
   return (
     <Container>
@@ -23,14 +25,12 @@ const IndexPage: FC<PageProps<IndexQuery>> = (props) => {
               어서오세요!
             </Text>
             <Text as='h1' size={48} weight={800} lineHeight={56}>
-              저는 오현택입니다.
+              저는 {profile.author}입니다.
             </Text>
           </Title>
           <SubTitle>
             <Text as='p' size={20} weight={400} lineHeight={40}>
-              대한민국 서울에서 <strong>소프트웨어 엔지니어</strong>로 일하고 있어요. 한 분야에 국한되지 않고, 다양한
-              도메인을 접해보는 것에 즐거움을 느낍니다. 공부하면서, 또는 이슈 대응하면서 알게된 점 위주로 블로그에 글을
-              작성하고 있어요. 최근에는 Elixir 라는 언어 생태계에 관심이 많아, 많은 시간을 투자하고 있어요.
+              짤막한 개인 소개를 쓰는 란이에요!
             </Text>
           </SubTitle>
           <Button size='large' color='alert' onClick={() => moveToLocation('/posts')}>
