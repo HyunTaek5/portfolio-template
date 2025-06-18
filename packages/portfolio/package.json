@@ -58,7 +58,7 @@
     "@types/react": "^18.2.52",
     "@types/react-dom": "^18.2.18",
     "@types/react-helmet": "^6.1.5",
-    "gh-pages": "^3.2.3"
+    "gh-pages": "^5.0.0"
   },
   "volta": {
     "node": "18.17.0",
